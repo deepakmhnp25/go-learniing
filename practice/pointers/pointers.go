@@ -14,4 +14,8 @@ func main() {
 	*p = *p * 32
 	fmt.Println("Value of p: ", *p)
 	fmt.Println("Value of anInt: ", anInt)
+
+
+	// any change to the pointer will change the original variable
+	// which it points to.
 }
