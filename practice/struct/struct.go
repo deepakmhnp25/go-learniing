@@ -12,6 +12,7 @@ func main() {
 	// SET VALUE
 	poodle.Age = 12
 	fmt.Println(poodle)
+	poodle.MethodInDogStrcut()
 
 }
 
@@ -20,4 +21,10 @@ func main() {
 type Dog struct {
 	Breed string
 	Age   int
+}
+
+// How to create a method inside the class
+
+func (d Dog) MethodInDogStrcut() {
+	fmt.Println("This is the method inside the class Dog")
 }
